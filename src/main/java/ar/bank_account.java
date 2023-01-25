@@ -4,12 +4,13 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 
 class SimpleBankAcc{
+    private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     Scanner sc = new Scanner(System.in);
     String userName;
     long accNumber;
     double balance;
 
-    simpleBankAcc(){
+    SimpleBankAcc(){
         LOGGER.log(Level.INFO,"Enter user name: ");
         userName = sc.nextLine();
         LOGGER.log(Level.INFO,"Enter account number: ");
@@ -39,7 +40,7 @@ class SimpleBankAcc{
 public class BANKACCOUNT {
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
-       simpleBankAcc user = new simpleBankAcc();
+       SimpleBankAcc user = new SimpleBankAcc();
        int option;
        Scanner sc = null;
        try{ 
