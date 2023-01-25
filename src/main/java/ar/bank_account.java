@@ -19,7 +19,7 @@ class SimpleBankAcc{
     void deposit(){
         LOGGER.log(Level.INFO,"Enter amount to deposit: ");
         double amt = sc.nextDouble();
-        LOGGER.log(Level.INFO,"Amount credited: " +amt);
+        LOGGER.log(Level.INFO,"Amount credited: ");
         balance += amt;
     }
     void withdrawal(){
@@ -34,7 +34,7 @@ class SimpleBankAcc{
         }
     }
     void checkBalance(){
-        LOGGER.log(Level.INFO,"Your balance is "+balance);
+        LOGGER.log(Level.INFO,"Your balance is ");
     }
 }
 public class BANKACCOUNT {
@@ -45,8 +45,8 @@ public class BANKACCOUNT {
        Scanner sc = null;
        try{ 
        do{
-            System.out.println("1. Deposit\n2. Withdrawal\n3. Check balance\n4. Cancel");
-            System.out.print("Select Option: ");
+            LOGGEER.log(Level.INFO,"1. Deposit\n2. Withdrawal\n3. Check balance\n4. Cancel");
+            LOGGEER.log(Level.INFO,"Select Option: ");
             
             sc = new Scanner(System.in);
             option = sc.nextInt();
