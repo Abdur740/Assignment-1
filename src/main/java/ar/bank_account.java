@@ -1,7 +1,7 @@
 package ar;
 import java.util.Scanner;
 
-class SIMPLEBANKACCOUNT{
+class SimpleBankAcc{
     Scanner sc = new Scanner(System.in);
     String userName;
     long accNumber;
@@ -25,10 +25,8 @@ class SIMPLEBANKACCOUNT{
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
         }
-        // else if(withdrawAmt <100){
-        //     System.out.println("Please maintain minimum balance of 100 INR: "+balance);
-        // }
-        else{
+        else
+        {
             System.out.println("Insufficient funds, try again.");
         }
     }
