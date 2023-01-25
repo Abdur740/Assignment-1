@@ -45,8 +45,8 @@ public class BANKACCOUNT {
        Scanner sc = null;
        try{ 
        do{
-            LOGGEER.log(Level.INFO,"1. Deposit\n2. Withdrawal\n3. Check balance\n4. Cancel");
-            LOGGEER.log(Level.INFO,"Select Option: ");
+            LOGGER.log(Level.INFO,"1. Deposit\n2. Withdrawal\n3. Check balance\n4. Cancel");
+            LOGGER.log(Level.INFO,"Select Option: ");
             
             sc = new Scanner(System.in);
             option = sc.nextInt();
