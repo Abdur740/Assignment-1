@@ -58,7 +58,7 @@ public class BANKACCOUNT {
                 case 3: user.checkBalance();
                 break;
                 default:
-                LOGGER.log(Level.WARNING, "Invalid option!, Please select a valid option");
+                LOGGER.log(Level.WARNING, "Invalid, Please select a valid option");
                 }
             }
         }while(option!=4);
