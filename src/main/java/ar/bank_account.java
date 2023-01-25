@@ -10,9 +10,9 @@ class SimpleBankAcc{
     double balance;
 
     simpleBankAcc(){
-        System.out.print("Enter user name: ");
+        LOGGER.log(Level.INFO,"Enter user name: ");
         userName = sc.nextLine();
-        System.out.print("Enter account number: ");
+        LOGGER.log(Level.INFO,"Enter account number: ");
         accNumber = sc.nextLong();
     }
     void deposit(){
@@ -58,7 +58,8 @@ public class BANKACCOUNT {
                 case 3: user.checkBalance();
                 break;
                 default:
-                LOGGER.log(Level.WARNING, "Invalid, Please select a valid option");
+                LOGGER.log(Level.WARNING, "Invalid");
+                break;
                 }
             }
         }while(option!=4);
