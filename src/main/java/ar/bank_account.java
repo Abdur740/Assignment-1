@@ -1,7 +1,7 @@
 package ar;
 import java.util.Scanner;
 
-class simpleBankAcc{
+class SIMPLEBANKACCOUNT{
     Scanner sc = new Scanner(System.in);
     String userName;
     long accNumber;
@@ -36,7 +36,7 @@ class simpleBankAcc{
         System.out.println("Your balance is "+balance);
     }
 }
-public class bank_account {
+public class BANKACCOUNT {
     public static void main(String[] args) {
        simpleBankAcc user = new simpleBankAcc();
        int option;
