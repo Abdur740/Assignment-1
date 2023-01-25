@@ -16,24 +16,24 @@ class SimpleBankAcc{
         accNumber = sc.nextLong();
     }
     void deposit(){
-        System.out.print("Enter the amount to deposit: ");
+        LOGGER.log(Level.INFO,"Enter amount to deposit: ");
         double amt = sc.nextDouble();
-        System.out.print("Amount credited: " +amt);
+        LOGGER.log(Level.INFO,"Amount credited: " +amt);
         balance += amt;
     }
     void withdrawal(){
-        System.out.print("Enter amount to withdraw: ");
+        LOGGER.log(Level.INFO,"Enter amount to withdraw: ");
         double withdrawAmt = sc.nextDouble();
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
         }
         else
         {
-            System.out.println("Insufficient funds, try again.");
+            LOGGER.log(Level.INFO,"Insufficient funds, try again.");
         }
     }
     void checkBalance(){
-        System.out.println("Your balance is "+balance);
+        LOGGER.log(Level.INFO,"Your balance is "+balance);
     }
 }
 public class BANKACCOUNT {
@@ -63,7 +63,7 @@ public class BANKACCOUNT {
                 }
             }
         }while(option!=4);
-        System.out.println("Thank you for banking with us!");
+        LOGGER.log(Level.INFO,"Thank you for banking with us!");
         }finally{
             if(sc !=null){
                 sc.close();
