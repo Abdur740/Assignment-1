@@ -37,7 +37,7 @@ class SimpleBankAcc{
     }
 }
 public class BANKACCOUNT {
-    private final static Logger LLOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
        simpleBankAcc user = new simpleBankAcc();
        int option;
