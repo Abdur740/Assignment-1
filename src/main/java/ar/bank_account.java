@@ -1,4 +1,6 @@
 package ar;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.Scanner;
 
 class SimpleBankAcc{
@@ -35,6 +37,7 @@ class SimpleBankAcc{
     }
 }
 public class BANKACCOUNT {
+    private final static Logger LLOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
        simpleBankAcc user = new simpleBankAcc();
        int option;
@@ -55,7 +58,7 @@ public class BANKACCOUNT {
                 case 3: user.checkBalance();
                 break;
                 default:
-                System.out.println("Please enter a valid input!");
+                LOGGER.log(Level.WARNING, "Invalid option!, Please select a valid option");
                 }
             }
         }while(option!=4);
