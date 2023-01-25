@@ -19,7 +19,7 @@ class SimpleBankAcc{
     void deposit(){
         LOGGER.log(Level.INFO,"Enter amount to deposit: ");
         double amt = sc.nextDouble();
-        LOGGER.log(Level.INFO,"Amount credited: "+amt+" INR");
+        LOGGER.log(Level.INFO,Double.toString(amt),"Amount credited: "+amt+" INR");
         balance += amt;
     }
     void withdrawal(){
@@ -34,7 +34,7 @@ class SimpleBankAcc{
         }
     }
     void checkBalance(){
-        LOGGER.log(Level.INFO,"Your balance is "+balance+" INR");
+        LOGGER.log(Level.INFO,Double.toString(balance),"Your balance is "+balance+" INR");
     }
 }
 public class BANKACCOUNT {
