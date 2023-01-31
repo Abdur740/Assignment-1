@@ -38,7 +38,8 @@ class SimpleBankAcc{
         }
     }
     void checkBalance(){
-        LOGGER.log(Level.INFO,Double.toString(balance),"Your balance is "+balance+" INR");
+        String y1 = "Your balace is "+balance;
+        LOGGER.info(y1);
     }
 }
 public class Bankaccount {
