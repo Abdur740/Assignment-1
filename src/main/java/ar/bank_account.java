@@ -27,7 +27,7 @@ class SimpleBankAcc{
         double withdrawAmt = sc.nextDouble();
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
-            LOGGER.log(Level.INFO,"Amount Withdrawed: "+withdrawAmt);
+            LOGGER.log(Level.SEVERE,"Amount Withdrawed: "+withdrawAmt);
         }
         else
         {
