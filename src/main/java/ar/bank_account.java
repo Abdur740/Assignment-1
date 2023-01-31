@@ -25,6 +25,8 @@ class SimpleBankAcc{
     void withdrawal(){
         LOGGER.log(Level.INFO,"Enter amount to withdraw: ");
         double withdrawAmt = sc.nextDouble();
+        String x = "Amount withdrawed :"+withdrawAmt;
+        LOGGER.info(x);
         if(withdrawAmt < balance){
             balance-=withdrawAmt;
         }
