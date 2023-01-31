@@ -37,7 +37,7 @@ class SimpleBankAcc{
         LOGGER.log(Level.INFO,Double.toString(balance),"Your balance is "+balance+" INR");
     }
 }
-public class BANKACCOUNT {
+public class bankaccount {
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public static void main(String[] args) {
        SimpleBankAcc user = new SimpleBankAcc();
